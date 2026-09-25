@@ -16,11 +16,7 @@ class Solution(object):
         freq_s = Counter(list(s))
         freq_t = Counter(list(t))
 
-        for i, key in enumerate(freq_s):
-            if freq_s.get(key) != freq_t.get(key):
-                return False
-        
-        return True
+        return freq_t == freq_s
             
            
 
